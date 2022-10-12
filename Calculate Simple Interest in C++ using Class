@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class BuddyCode {
+     private:
+     float p,r,t,si;
+     public:
+     void getdata(){
+          cout<<"Enter the principle Amount :- ";
+          cin>>p;
+          cout<<"Enter the Rate of Interest :- ";
+          cin>>r;
+          cout<<"Enter the Number of Years/ Time period :-";
+          cin>>t;
+     }
+     void showdata(){
+          si=(p*r*t)/100;
+          cout<<"Simple Intrest = "<<si<<endl;
+     }
+};
+int main(){
+     BuddyCode find_si;
+     find_si.getdata();
+     find_si.showdata();
+     return 0;
+}
